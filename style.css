@@ -1,0 +1,25 @@
+body {
+    position:absolute;
+    left:40%;
+    top:25%;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    gap:20px;
+}
+
+button {
+    width: 60px;
+    height:60px;
+    border:1px solid black;
+    background-color: antiquewhite;
+}
+
+#display {
+    text-align: right;
+    border: 2px solid purple;
+    padding:5px;
+}
