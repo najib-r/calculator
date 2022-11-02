@@ -44,7 +44,12 @@ button.digit {
 
 button.digit:hover {
     background-color: #bbbcb7;
+}
 
+button.digit:active {
+    border:2px solid black;
+    background-color: #A8A9A5;
+    transition: 0s;
 }
 
 button.operation {
@@ -53,6 +58,12 @@ button.operation {
 
 button.operation:hover {
     background-color: #efab7b;
+}
+
+button.operation:active {
+    border:2px solid black;
+    background-color: #F1A26A;
+    transition: 0s;
 }
 
 #display {
