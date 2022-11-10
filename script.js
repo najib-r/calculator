@@ -36,10 +36,12 @@ console.log(buttons);
 
 for(let i = 0; i<buttons.length; i++) {
     buttons[i].addEventListener('click', () => {
+        // if button is C
         if (buttons[i].textContent==="C") {
             display.innerHTML="";
             display2.innerHTML="";
         }
+        // if button is +
         else if (buttons[i].textContent==="+") {
             a = parseInt(display.textContent);
             if (display2.textContent!="") {
@@ -52,6 +54,7 @@ for(let i = 0; i<buttons.length; i++) {
             }
             display.innerHTML="";
         }
+        // if button is -
         else if (buttons[i].textContent==="-") {
             a = parseInt(display.textContent);
             if (display2.textContent!="") {
@@ -64,6 +67,7 @@ for(let i = 0; i<buttons.length; i++) {
             }
             display.innerHTML="";
         }
+        // if button is x
         else if (buttons[i].textContent==="x") {
             a = parseInt(display.textContent);
             if (display2.textContent!="") {
@@ -76,6 +80,7 @@ for(let i = 0; i<buttons.length; i++) {
             }
             display.innerHTML="";
         }
+        // if button is /
         else if (buttons[i].textContent==="/") {
             a = parseInt(display.textContent);
             if (display2.textContent!="") {
@@ -88,12 +93,14 @@ for(let i = 0; i<buttons.length; i++) {
             }
             display.innerHTML="";
         }
+        // if button is =
         else if (buttons[i].textContent==="=") {
             b = parseInt(display.textContent);
             let result = operate(parseInt(display2.innerHTML),b,operator);
             display2.innerHTML="";
             display.innerHTML = result;
         }
+        // button is a digit
         else {
             display.innerHTML+=buttons[i].textContent;
         }
